@@ -22,6 +22,6 @@ questions:
     description: "What the name of the default namespace for components should be?"
   - variable: global.clusterCABundle
     default: ""
-    description: "Need cluster CA here using kubectl config view --raw --minify --flatten -o jsonpath='{.clusters[].cluster.certificate-authority-data}'
+    description: "Need cluster CA here using kubectl config view --raw --minify --flatten -o jsonpath='{.clusters[].cluster.certificate-authority-data}"
     label: Cluster CA Bundle
     group: "CA Bundle"
