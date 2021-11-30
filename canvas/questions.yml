@@ -1,0 +1,27 @@
+categories:
+  - tmf
+  - canvas
+questions:
+  - variable: global.namespaceCanvas.create
+    default: false
+    type: boolean
+    label: Create Namespace?
+    group: "Canvas Name Space"
+    description: "Should Create a Canvas Namespace"
+  - variable: global.namespaceDefault.create
+    default: true
+    type: boolean
+    label: Create Default Components Namespace?
+    group: "Components Name Space"
+    description: "Should Create a Components Namespace"
+  - variable: global.namespaceDefault.name
+    default: components
+    type: string
+    label: Name of components name space
+    group: "Components Name Space"
+    description: "What the name of the default namespace for components should be?"
+  - variable: global.clusterCABundle
+    default: ""
+    description: "Need cluster CA here using kubectl config view --raw --minify --flatten -o jsonpath='{.clusters[].cluster.certificate-authority-data}'
+    label: Cluster CA Bundle
+    group: "CA Bundle"
